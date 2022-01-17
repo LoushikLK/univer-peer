@@ -1,0 +1,88 @@
+.navbar-main {
+  padding: 1rem 0;
+  background-color: $light;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  box-shadow: 0px 0px 8px 0px #00000042;
+
+  //   background: linear-gradient(98deg, #0032a5, #d77528);
+
+  .navbar-inner-container {
+    justify-content: space-between;
+    .navbar-logo {
+      img {
+        width: 11rem;
+      }
+    }
+
+    .navbar-navigation-li {
+      margin-left: 1rem;
+      color: $secondary;
+      font-size: $font-size-md;
+
+      &:hover {
+        color: $secondary;
+        cursor: pointer;
+      }
+      svg {
+        height: 2rem;
+        width: 2rem;
+      }
+    }
+  }
+}
+
+.round-profile-nav-icon {
+  height: 3rem;
+  width: 3rem;
+  background: pink;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  &:hover {
+    .navbar-hover-navigation {
+      display: block !important;
+    }
+  }
+}
+
+.navbar-user-details-logo {
+  height: 2.5rem;
+  width: 2.5rem;
+  overflow: hidden;
+  border-radius: 50%;
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.navbar-hover-navigation {
+  position: absolute;
+  background: $light;
+  top: 40px;
+  right: 0;
+  width: auto;
+  padding: 1rem;
+  border-radius: 0.9rem;
+  box-shadow: 0px 0px 7px 0px #00000042;
+  z-index: 9999;
+  font-size: $font-size-base;
+  max-width: 20rem;
+  display: none;
+}
+
+.navbar-chat,
+.navbar-logout,
+.navbar-user-details {
+  padding: 5px;
+  &:hover {
+    background-color: #00000014;
+    border-radius: 9px;
+  }
+}

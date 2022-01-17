@@ -1,0 +1,39 @@
+.basic-card-main {
+  background-image: linear-gradient(98deg, #00000000, #00000000);
+  width: 13rem;
+  height: 12rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  justify-content: space-around;
+  border: 1px solid rgba(0, 0, 0, 0.377);
+  transition: all 0.3s ease-in-out;
+
+  .basic-card-icon {
+    width: 4rem;
+    img {
+      width: 100%;
+    }
+  }
+  .basic-card-content {
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: $font-size-md;
+    font-weight: $font-weight-bold;
+  }
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 29%);
+    background-image: $base-linear-gradient;
+    color: $light;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .basic-card-main {
+    height: 10rem !important;
+    width: 100% !important;
+  }
+  .basic-card-content {
+    font-size: $font-size-sm !important;
+  }
+}
